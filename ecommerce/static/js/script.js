@@ -58,3 +58,6 @@ $(document).ready(function() {
 }); 
 // jquery end
 
+setTimeout(function(){ // this is for registeration sucessfull auto remove
+    $('#message').fadeOut('slow');
+}, 4000);
