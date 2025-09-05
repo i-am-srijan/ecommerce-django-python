@@ -146,3 +146,15 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+# #SMTP CONFIGUTATION is for email verification
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'buddhalaxmizip@gmail.com' #this is your gmail password
+# EMAIL_HOST_PASSWORD = 'test123' # this is your app password
+# EMAIL_USE_TLS = True
+
+
+#this for terminal email verification link
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # this give active link on terminal after clicking it verify
+
